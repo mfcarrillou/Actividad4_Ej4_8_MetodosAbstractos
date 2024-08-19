@@ -42,12 +42,11 @@ public class Equipo {
         equipo.add(ciclista);
     }
     
-    protected double calcularTotalTiempo(){
+    protected void calcularTotalTiempo(){
         for (Ciclista ciclista : equipo) {
             double tiempoCiclista = ciclista.getTiempoAcumulado();
             totalTiempo = totalTiempo + tiempoCiclista;
         }
-        return totalTiempo;
     }
     
     protected void listarEquipo(){

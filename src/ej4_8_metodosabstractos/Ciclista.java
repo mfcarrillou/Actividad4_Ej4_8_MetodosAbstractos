@@ -5,13 +5,11 @@ public abstract class Ciclista {
     private String nombre;
     private double tiempoAcumulado = 0; //en minutos
     
-    protected abstract String imprimirTipo();
-    
     protected Ciclista(int id, String nom){
         identificador = id;
         nombre = nom;
     }
-    
+            
     protected int getIdentificador(){
         return identificador;
     }
@@ -42,4 +40,6 @@ public abstract class Ciclista {
         System.out.println("Tiempo acumulado de carrera, en minutos: " + tiempoAcumulado);
     }
     
+    protected abstract String imprimirTipo();
+        
 }
